@@ -1,0 +1,360 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background: linear-gradient(to left top, #434343, #000000) fixed;
+    min-height: 100vh;
+}
+.cleaner {
+    clear: both;
+}
+a:link, a:visited {
+    color: #fcac03;
+    text-decoration: none;
+    border-width: 10px;
+    border-image: url('../images/cssborder.png') 30 round;
+    border-style: solid;
+}
+a:hover {
+    color: #ffc953;
+    text-decoration: none;
+}
+/* menu */
+nav {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li {
+    margin: 20px 5%;
+}
+nav ul li img {
+    height: 50px;
+    transition: 5s;
+}
+nav ul li img:hover {
+    transform: rotate(360deg);
+}
+
+/* menu end */
+main {
+    color: #fcac03;
+    min-height: 100vh;
+}
+.mainfront {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/cssbordervertical.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    min-height: 100vh;
+}
+.mainfront h1 {
+    font-size: 60px;
+}
+#fpdice {
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+main h1 {
+    margin: 200px 0px 15px 0px;
+}
+main img {
+    width: 25%;
+    margin: 25px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    color: #fcac03;
+    background: #000000;
+    align-items: center;
+    border-top: 3vh;
+    height: 5vh;
+}
+footer i.fa {
+    width: 0px;
+    margin: 0px 10px;
+}
+footer p {
+    margin: 0px 20px 0px 10px;
+}
+.footerfix a {
+    border: none;
+    border-width: 0px;
+}
+/* products page */
+.mainproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    text-align: center;
+}
+.first_row h1 {
+    margin: 0px;
+}
+.first_row img {
+    width: 80%;
+}
+.second_row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.second_row img {
+    width: 80%;
+}
+.second_row h1 {
+    margin: 0px;
+}
+.product img {
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    transition: 1s;
+}
+.product img:hover {
+    width: 70%;
+}
+/* products page end*/
+/* contact page*/
+.maincontact {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    background: url(../images/css\ vine.png);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+.maincontact div {
+    margin-left: 50px;
+}
+.workhours {
+    margin: 20px;
+    margin-top: 40px;
+    margin-left: 80px;
+    text-decoration: underline;
+}
+.feel_free {
+    margin-left: 70px;
+}
+.feel_free a {
+    border: solid;
+    padding: 5px;
+}
+.contact_page_contacts div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+}
+.contact_page_contacts div a {
+    border: none;
+    border-width: 0px;
+}
+.contact_page_contacts div p {
+    margin-left: 10px;
+    font-size: 20pt;
+}
+.fa {
+    width: 40px;
+}
+table th {
+    padding: 10px;
+}
+table {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 80px;
+}
+#oandm {
+    display: flex;
+}
+.mapouter {
+    position: relative;
+    top: 560px;
+    right: 250px;
+    z-index: -1;
+}
+/* form */
+.form h1 {
+    margin-top: 30px;
+}
+.maincontact form {
+    font-weight: 600;
+    width: 50%;
+}
+.maincontact label {
+    margin: 10px;
+    font-size: 13pt;
+    font-weight: 900;
+}
+.maincontact input {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 13pt;
+    padding: 2px;
+}
+.maincontact p {
+    margin: 10px;
+}
+.maincontact textarea {
+    padding: 5px;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 13pt;
+}
+#submit {
+    font-size: 20pt;
+    margin: 10px;
+    padding: 30px;
+}
+/* form end */
+/* contact page end*/
+/* about me page */
+.mainabout {
+    display: flex;
+    margin-left: 90px;
+}
+.mainabout img {
+    margin-top: 170px;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+#about_text {
+    width: 50%;
+    font-size: 15pt;
+}
+hr {
+    margin: 20px 0px;
+}
+/* about me page end */
+/* dice page */
+.maindice {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/css\ vine.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    
+}
+.maindice h1 {
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+#fourside {
+    margin-top: 200px;
+}
+.price {
+    position: relative;
+    left: 25em;
+    bottom: 210px;
+    font-size: 25pt;
+    z-index: -1;
+    animation-name: prices;
+    animation-duration: 3s;
+}
+@keyframes prices {
+    from {left: 25pt;}
+    to {left: 25em;}
+}
+.maindice div {
+    width: 600px;
+}
+.maindice img {
+    width: 100%;
+}
+/* dice page end */
+/* boards page */
+.mainboards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.mainboards h1 {
+    font-size: 25pt;
+}
+.mainboards p {
+    font-size: 18pt;
+    margin: 15px 60px;
+}
+.boardimg {
+    transition-duration: 1s;
+}
+.boardimg:hover {
+    width: 37%;
+}
+/* boards page end */
+/* cards page */
+.maincards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../images/cssbordervertical.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 40%;
+
+}
+.maincards h1 {
+    font-size: 25pt;
+}
+.maincards p {
+    font-size: 18pt;
+    margin: 15px 150px;
+}
+.cardimg {
+    transition-duration: 1s;
+    border-radius: 20px;
+}
+.cardimg:hover {
+    width: 50%;
+}
+/* cards page end */
+/* miniatures page */
+.mainminiatures {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.mainminiatures h1 {
+    font-size: 25pt;
+}
+.mainminiatures p {
+    font-size: 18pt;
+    margin: 15px 60px;
+}
+/*miniatures page end*/
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
